@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 import { ChartsModule } from "ng2-charts";
 
@@ -10,9 +11,9 @@ import { MyDoughnutChartComponent } from "./my-doughnut-chart/my-doughnut-chart.
 import { MyRadarChartComponent } from "./my-radar-chart/my-radar-chart.component";
 import { MyPieChartComponent } from "./my-pie-chart/my-pie-chart.component";
 import { FormularioComponent } from "./formulario/formulario.component";
-import { AnulacionComponent } from './anulacion/anulacion.component';
-import { HomeComponent } from './home/home.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { AnulacionComponent } from "./anulacion/anulacion.component";
+import { HomeComponent } from "./home/home.component";
+import { NotFoundPageComponent } from "./not-found-page/not-found-page.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     HomeComponent,
     NotFoundPageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ChartsModule],
+  imports: [BrowserModule, AppRoutingModule, ChartsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
